@@ -98,7 +98,6 @@ public class Triangle
         }
     }
 
-
     public double GetSquare()
     {
         double p;
@@ -106,5 +105,4 @@ public class Triangle
         p = (_a + _b + _c) / 2;
         return Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));
     }
-
 }
