@@ -1,0 +1,12 @@
+venv
+.idea
+__pycache__
+htmlcov
+.coverage
+.coveragerc
+
+.vs
+bin 
+obj
+*.csproj
+*.sln
