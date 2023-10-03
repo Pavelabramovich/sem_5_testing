@@ -448,5 +448,59 @@ public class Triangle_CheckTriangle_InfinitySides
 }
 
 
+[TestClass]
+public class Triangle_CheckTriangle_SumOfTwoSidesEqualsThird
+{
+    [TestMethod]
+    public void CheckTriangle_A_Plus_B_Equals_C()
+    {
+        Triangle tr = new Triangle(1.0, 1.0, 2.0);
+
+        Assert.IsFalse(tr.CheckTriangle());
+    }
+
+    [TestMethod]
+    public void CheckTriangle_B_Plus_C_Equals_A()
+    {
+        Triangle tr = new Triangle(2.0, 1.0, 1.0);
+
+        Assert.IsFalse(tr.CheckTriangle());
+    }
+
+    [TestMethod]
+    public void CheckTriangle_C_Plus_A_Equals_B()
+    {
+        Triangle tr = new Triangle(1.0, 2.0, 1.0);
+
+        Assert.IsFalse(tr.CheckTriangle());
+    }
+}
 
 
+[TestClass]
+public class Triangle_CheckTriangle_SumOfTwoSidesGreaterThird
+{
+    [TestMethod]
+    public void CheckTriangle_A_Plus_B_Greater_C()
+    {
+        Triangle tr = new Triangle(1.0, 1.0, 3.0);
+
+        Assert.IsFalse(tr.CheckTriangle());
+    }
+
+    [TestMethod]
+    public void CheckTriangle_B_Plus_C_Greater_A()
+    {
+        Triangle tr = new Triangle(3.0, 1.0, 1.0);
+
+        Assert.IsFalse(tr.CheckTriangle());
+    }
+
+    [TestMethod]
+    public void CheckTriangle_C_Plus_A_Greater_B()
+    {
+        Triangle tr = new Triangle(1.0, 3.0, 1.0);
+
+        Assert.IsFalse(tr.CheckTriangle());
+    }
+}
