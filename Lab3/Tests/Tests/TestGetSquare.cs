@@ -1,10 +1,10 @@
 using triangle;
 
 
-namespace Tests.TestCheckTriangle;
+namespace Tests.TestGetSquare;
 
 [TestClass]
-public class UnitTest1
+public class TestGetSquare
 {
     [TestMethod]
     public void TestMethod1()

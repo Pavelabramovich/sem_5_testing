@@ -1,7 +1,7 @@
 namespace Tests.TestDetectTriangle;
 
 [TestClass]
-public class UnitTest1
+public class TestDetectTriangle
 {
     [TestMethod]
     public void TestMethod1()

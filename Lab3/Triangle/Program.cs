@@ -1,6 +1,10 @@
-﻿using triangle;
+﻿using System.Collections;
+using System.Text;
+using triangle;
 
 namespace runner;
+
+
 
 static class Programm
 {
